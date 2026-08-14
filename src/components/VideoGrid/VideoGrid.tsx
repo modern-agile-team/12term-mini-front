@@ -1,7 +1,6 @@
 import { videos } from "../../data/videos";
 import VideoCard from "../VideoCard/VideoCard";
 import styles from "./VideoGrid.module.css";
-import TrandingVideos from "../TrendingVideos/TrendingVideos";
 
 function VideoGrid() {
   return (
