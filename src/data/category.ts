@@ -3,7 +3,7 @@ export interface Category {
   name: string;
 }
 
-export const categories: Category[] = [
+export const Category: Category[] = [
   {
     id: 1,
     name: "전체",

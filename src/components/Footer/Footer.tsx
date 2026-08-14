@@ -1,15 +1,15 @@
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-top">
-        <div className="footer-logo">
-          <span className="logo-icon">M</span>
-          <span className="logo-text">모던튜브</span>
+    <footer className={styles.footer}>
+      <div className={styles.footerTop}>
+        <div className={styles.footerLogo}>
+          <span className={styles.logoIcon}>M</span>
+          <span className={styles.logoText}>모던튜브</span>
         </div>
 
-        <nav className="footer-menu">
+        <nav className={styles.footerMenu}>
           <a href="#">이용약관</a>
           <a href="#">개인정보처리방침</a>
           <a href="#">고객센터</a>
@@ -17,7 +17,7 @@ function Footer() {
         </nav>
       </div>
 
-      <div className="footer-bottom">
+      <div className={styles.footerBottom}>
         <p>© 2026 ModernTube. All Rights Reserved.</p>
       </div>
     </footer>

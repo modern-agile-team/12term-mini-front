@@ -1,20 +1,20 @@
-import "./categoryBar.css";
-import { categories } from "../../data/categories";
+import styles from "./CategoryBar.module.css";
+import { Category } from "../../data/category";
 import { useState } from "react";
 
 function CategoryBar() {
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
 
   return (
-    <nav className="category-bar">
-      <ul className="category-list">
-        {categories.map((category) => (
+    <nav className={styles.categoryBar}>
+      <ul className={styles.categoryList}>
+        {Category.map((category) => (
           <li key={category.id}>
             <button
               className={
                 selectedCategory === category.id
-                  ? "category-button active"
-                  : "category-button"
+                  ? `${styles.categoryButton} ${styles.active}`
+                  : styles.categoryButton
               }
               onClick={() => setSelectedCategory(category.id)}
             >

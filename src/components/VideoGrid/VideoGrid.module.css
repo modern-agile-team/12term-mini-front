@@ -1,0 +1,11 @@
+.videoGrid {
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 20px;
+
+  padding: 24px 16px;
+  box-sizing: border-box;
+  background-color: #111827;
+}
