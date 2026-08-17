@@ -1,22 +1,12 @@
-import styles from "../NewVideos/NewVideos.module.css";
+import VideoSection from "../VideoSection/VideoSection";
 
-function TrandingVideos() {
+function TrendingVideos() {
   return (
-    <section className={styles.newVideos}>
-      <div className={styles.header}>
-        <div>
-          <h2 className={styles.title}>오늘의 급상승</h2>
-
-          <p className={styles.description}>24시간 동안 가장 많이 본 영상</p>
-        </div>
-
-        <button className={styles.moreButton}>
-          전체 순위
-          <span>→</span>
-        </button>
-      </div>
-    </section>
+    <VideoSection
+      title="인기 급상승 영상"
+      description="지금 가장 인기 있는 영상들"
+    />
   );
 }
 
-export default TrandingVideos;
+export default TrendingVideos;

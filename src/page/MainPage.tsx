@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header.tsx";
-import CategoryBar from "../components/CategoryBar/CategoryBar";
+import CategoryBar from "../components/CategoryBar/CategoryBar.tsx";
 import Footer from "../components/Footer/Footer.tsx";
 import NewVideos from "../components/NewVideos/NewVideos";
 import VideoGrid from "../components/VideoGrid/VideoGrid";

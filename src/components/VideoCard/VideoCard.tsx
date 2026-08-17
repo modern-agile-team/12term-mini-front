@@ -31,7 +31,7 @@ function VideoCard({ video }: VideoCardProps) {
           <p className={styles.channel}>{video.channel}</p>
 
           <p className={styles.meta}>
-            조회수 {video.views} · {video.createdAt}
+            조회수 {video.views}회 · {video.createdAt}
           </p>
         </div>
       </div>

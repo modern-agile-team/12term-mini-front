@@ -4,7 +4,7 @@ export interface Video {
   channelImage: string;
   title: string;
   channel: string;
-  views: string;
+  views: number;
   createdAt: string;
 }
 
@@ -15,7 +15,7 @@ export const videos: Video[] = [
     channelImage: "https://i.pravatar.cc/40?img=1",
     title: "React 기초부터 프로젝트까지",
     channel: "코딩채널",
-    views: "12만회",
+    views: 120000,
     createdAt: "3일 전",
   },
   {
@@ -24,7 +24,7 @@ export const videos: Video[] = [
     channelImage: "https://i.pravatar.cc/40?img=2",
     title: "TypeScript 입문 강의",
     channel: "프론트엔드 연구소",
-    views: "8.7만회",
+    views: 87000,
     createdAt: "1주 전",
   },
   {
@@ -33,7 +33,7 @@ export const videos: Video[] = [
     channelImage: "https://i.pravatar.cc/40?img=3",
     title: "CSS Flexbox 완벽 정리",
     channel: "웹디자인",
-    views: "5.1만회",
+    views: 51000,
     createdAt: "2일 전",
   },
   {
@@ -42,7 +42,7 @@ export const videos: Video[] = [
     channelImage: "https://i.pravatar.cc/40?img=4",
     title: "JavaScript 비동기 쉽게 이해하기",
     channel: "JS Master",
-    views: "15만회",
+    views: 150000,
     createdAt: "5일 전",
   },
   {
@@ -51,7 +51,7 @@ export const videos: Video[] = [
     channelImage: "https://i.pravatar.cc/40?img=5",
     title: "Git & GitHub 협업 방법",
     channel: "개발일지",
-    views: "9.8만회",
+    views: 98000,
     createdAt: "2주 전",
   },
   {
@@ -60,7 +60,7 @@ export const videos: Video[] = [
     channelImage: "https://i.pravatar.cc/40?img=6",
     title: "React Router 실전 예제",
     channel: "React Lab",
-    views: "6.3만회",
+    views: 63000,
     createdAt: "4일 전",
   },
 ];

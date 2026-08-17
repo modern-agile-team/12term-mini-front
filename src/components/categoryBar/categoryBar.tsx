@@ -1,5 +1,5 @@
 import styles from "./CategoryBar.module.css";
-import { Category } from "../../data/category";
+import { category } from "../../data/categorys";
 import { useState } from "react";
 
 function CategoryBar() {
@@ -8,7 +8,7 @@ function CategoryBar() {
   return (
     <nav className={styles.categoryBar}>
       <ul className={styles.categoryList}>
-        {Category.map((category) => (
+        {category.map((category) => (
           <li key={category.id}>
             <button
               className={

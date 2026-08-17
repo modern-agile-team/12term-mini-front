@@ -5,8 +5,8 @@ import styles from "./VideoGrid.module.css";
 function VideoGrid() {
   return (
     <div className={styles.videoGrid}>
-      {videos.map((video) => (
-        <VideoCard key={video.id} video={video} />
+        {videos.map((video) => (
+          <VideoCard key={video.id} video={video} />
       ))}
     </div>
   );
