@@ -1,0 +1,61 @@
+.newVideos {
+  width: 100%;
+  padding: 24px 16px 28px;
+  box-sizing: border-box;
+
+  background-color: #111827;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+
+  color: #f9fafb;
+}
+
+.description {
+  margin: 12px 0 0;
+
+  font-size: 16px;
+  line-height: 1.4;
+
+  color: #6b7280;
+}
+
+.moreButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #9ca3af;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.moreButton span {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.moreButton:hover {
+  color: white;
+}

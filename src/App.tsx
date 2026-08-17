@@ -1,14 +1,8 @@
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import CategoryBar from "./components/categoryBar/categoryBar";
+import MainPage from "./page/MainPage";
 function App() {
   return (
     <>
-      <Header />
-
-      <CategoryBar />
-
-      <Footer />
+      <MainPage />
     </>
   );
 }
