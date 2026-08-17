@@ -1,9 +1,9 @@
-import Header from "../components/Header/Header.tsx";
-import CategoryBar from "../components/CategoryBar/CategoryBar.tsx";
+import Header from "../components/Header/Header";
+import CategoryBar from "../components/CategoryBar/CategoryBar";
 import Footer from "../components/Footer/Footer.tsx";
 import NewVideos from "../components/NewVideos/NewVideos";
 import VideoGrid from "../components/VideoGrid/VideoGrid";
-import TrandingVideos from "../components/TrendingVideos/TrendingVideos.tsx";
+import TrendingVideos from "../components/TrendingVideos/TrendingVideos";
 
 function MainPage() {
   return (
@@ -12,7 +12,7 @@ function MainPage() {
       <CategoryBar />
       <NewVideos />
       <VideoGrid />
-      <TrandingVideos />
+      <TrendingVideos />
       <VideoGrid />
       <Footer />
     </main>
