@@ -1,20 +1,17 @@
-import Header from "../components/Header/Header";
-import CategoryBar from "../components/categoryBar/CategoryBar";
-import Footer from "../components/Footer/Footer.tsx";
+import CategoryBar from "../components/CategoryBar/CategoryBar";
 import NewVideos from "../components/NewVideos/NewVideos";
 import VideoGrid from "../components/VideoGrid/VideoGrid";
 import TrendingVideos from "../components/TrendingVideos/TrendingVideos";
+import { videos } from "../data/videos";
 
 function MainPage() {
   return (
     <main>
-      <Header />
       <CategoryBar />
       <NewVideos />
-      <VideoGrid />
+      <VideoGrid videos={videos} />
       <TrendingVideos />
-      <VideoGrid />
-      <Footer />
+      <VideoGrid videos={videos} />
     </main>
   );
 }
