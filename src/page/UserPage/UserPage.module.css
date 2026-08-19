@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-/* 채널 정보 */
 .channelInfo {
   display: flex;
   align-items: center;
@@ -49,7 +48,6 @@
   color: #333 !important;
 }
 
-/* 구독 버튼 */
 .subscribeButton {
   border: none;
   border-radius: 20px;
@@ -88,7 +86,6 @@
   border-bottom: 2px solid #111;
 }
 
-/* 영상 섹션 */
 .videoSection {
   padding-top: 32px;
 }
@@ -98,14 +95,12 @@
   font-size: 22px;
 }
 
-/* 영상 그리드 */
 .videoGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px 16px;
 }
 
-/* 영상 카드 */
 .videoCard {
   cursor: pointer;
 }
@@ -143,14 +138,12 @@
   font-size: 13px;
 }
 
-/* 태블릿 */
 @media (max-width: 900px) {
   .videoGrid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* 모바일 */
 @media (max-width: 650px) {
   .channelInfo {
     align-items: flex-start;
