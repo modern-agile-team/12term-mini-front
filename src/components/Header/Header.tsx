@@ -1,7 +1,11 @@
 import styles from "./Header.module.css";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
+import { useState } from "react";
 
 function Header() {
+  const [searchText, setSearchText] = useState("");
+  const navigate = useNavigate();
+
   return (
     <header className={styles.header}>
       <div className={styles.headerLeft}>
@@ -26,7 +30,15 @@ function Header() {
       </div>
 
       <div className={styles.headerCenter}>
-        <input type="text" placeholder="영상, 크리에이터 검색" />
+        <input
+          type="text"
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") navigate(`/search?query=${searchText}`);
+          }}
+          placeholder="영상, 크리에이터 검색"
+        />
       </div>
 
       <div className={styles.headerRight}>
