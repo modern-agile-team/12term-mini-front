@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router";
 import UserPage from "./page/UserPage/UserPage";
 import UploadPage from "./page/UploadPage/UploadPage";
 import DetailPage from "./page/DetailPage/DetailPage";
+import SearchPage from "./page/SearchPage/SearchPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/user" element={<UserPage />} />
         <Route path="/upload" element={<UploadPage />} />
         <Route path="/detail" element={<DetailPage />} />
+        <Route path="/search" element={<SearchPage />} />
       </Routes>
       <Footer />
     </>
