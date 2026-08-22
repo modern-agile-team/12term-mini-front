@@ -11,7 +11,6 @@ function SearchPage() {
       video.title.toLowerCase().includes(query.toLowerCase()) ||
       video.channel.toLowerCase().includes(query.toLowerCase()),
   );
-  console.log(query);
 
   return (
     <main className={styles.searchPage}>
