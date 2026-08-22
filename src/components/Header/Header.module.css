@@ -43,6 +43,9 @@
   text-decoration: none;
   color: inherit;
 }
+.logoIcon:hover {
+  background-color: #ea580c;
+}
 
 .logoText {
   font-size: 22px;
@@ -116,7 +119,7 @@
 
   border-radius: 50%;
 
-  background-color: #374151;
+  background-color: #f97316;
 
   display: flex;
   justify-content: center;
@@ -126,6 +129,9 @@
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+}
+.profile:hover {
+  background-color: #ea580c;
 }
 
 .menuButton {
@@ -150,4 +156,23 @@
   background-color: #1f232b;
   color: white;
   border-radius: 14px;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f97316;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background-color: #ea580c;
+}
+
+.searchButton:active {
+  transform: scale(0.98);
 }
