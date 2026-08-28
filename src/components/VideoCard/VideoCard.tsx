@@ -1,5 +1,6 @@
 import styles from "./VideoCard.module.css";
 import type { Video } from "../../data/videos.ts";
+import { Link } from "react-router";
 
 export interface VideoCardProps {
   video: Video;
@@ -7,35 +8,37 @@ export interface VideoCardProps {
 
 function VideoCard({ video }: VideoCardProps) {
   return (
-    <article className={styles.videoCard}>
-      <div className={styles.thumbnailWrapper}>
-        <img
-          src={video.thumbnail}
-          alt={video.title}
-          className={styles.thumbnail}
-        />
-      </div>
-
-      <div className={styles.videoInfo}>
-        <div className={styles.profileWrapper}>
+    <Link to={`/detail/${video.id}`}>
+      <article className={styles.videoCard}>
+        <div className={styles.thumbnailWrapper}>
           <img
-            src={video.channelImage}
-            alt={video.channel}
-            className={styles.profileImage}
+            src={video.thumbnail}
+            alt={video.title}
+            className={styles.thumbnail}
           />
         </div>
 
-        <div className={styles.textWrapper}>
-          <h3 className={styles.title}>{video.title}</h3>
+        <div className={styles.videoInfo}>
+          <div className={styles.profileWrapper}>
+            <img
+              src={video.channelImage}
+              alt={video.channel}
+              className={styles.profileImage}
+            />
+          </div>
 
-          <p className={styles.channel}>{video.channel}</p>
+          <div className={styles.textWrapper}>
+            <h3 className={styles.title}>{video.title}</h3>
 
-          <p className={styles.meta}>
-            조회수 {video.views}회 · {video.createdAt}
-          </p>
+            <p className={styles.channel}>{video.channel}</p>
+
+            <p className={styles.meta}>
+              조회수 {video.views}회 · {video.createdAt}
+            </p>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </Link>
   );
 }
 
