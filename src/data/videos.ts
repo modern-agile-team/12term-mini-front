@@ -6,6 +6,7 @@ export interface Video {
   channel: string;
   views: number;
   createdAt: string;
+  likes: number;
 }
 
 export const videos: Video[] = [
@@ -17,6 +18,7 @@ export const videos: Video[] = [
     channel: "코딩채널",
     views: 120000,
     createdAt: "3일 전",
+    likes: 5200,
   },
   {
     id: 2,
@@ -26,6 +28,7 @@ export const videos: Video[] = [
     channel: "프론트엔드 연구소",
     views: 87000,
     createdAt: "1주 전",
+    likes: 3400,
   },
   {
     id: 3,
@@ -35,6 +38,7 @@ export const videos: Video[] = [
     channel: "웹디자인",
     views: 51000,
     createdAt: "2일 전",
+    likes: 2100,
   },
   {
     id: 4,
@@ -44,6 +48,7 @@ export const videos: Video[] = [
     channel: "JS Master",
     views: 150000,
     createdAt: "5일 전",
+    likes: 6800,
   },
   {
     id: 5,
@@ -53,6 +58,7 @@ export const videos: Video[] = [
     channel: "개발일지",
     views: 98000,
     createdAt: "2주 전",
+    likes: 4100,
   },
   {
     id: 6,
@@ -62,5 +68,6 @@ export const videos: Video[] = [
     channel: "React Lab",
     views: 63000,
     createdAt: "4일 전",
+    likes: 2900,
   },
 ];

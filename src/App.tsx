@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/upload" element={<UploadPage />} />
-        <Route path="/detail" element={<DetailPage />} />
+        <Route path="/detail/:id" element={<DetailPage />} />
         <Route path="/search" element={<SearchPage />} />
       </Routes>
       <Footer />
